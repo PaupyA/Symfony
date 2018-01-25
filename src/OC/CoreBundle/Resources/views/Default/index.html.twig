@@ -1,0 +1,35 @@
+{# src/OC/CoreBundle/Resources/views/index.html.twig #}
+
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block title %}
+    Accueil - {{ parent() }}
+{% endblock %}
+
+
+        {% block menu %}
+
+
+            {{ parent() }}
+        {% endblock %}
+
+
+    {% block body %}
+
+
+
+        {# On définit un sous-titre commun à toutes les pages du bundle, par exemple #}
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2 class="display-4">Bienvenue sur la plateforme d'échange</h2>
+            </div>
+        </div>
+
+
+        {# On définit un nouveau bloc, que les vues du bundle pourront remplir #}
+        {% block ocplatform_body %}
+
+
+        {% endblock %}
+
+    {% endblock %}

@@ -1,0 +1,23 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/index.html.twig #}
+
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+    Contact - {{ parent() }}
+{% endblock %}
+
+{% block menu %}
+
+    <h3>Les annonces</h3>
+    <ul class="nav nav-pills nav-stacked">
+        <li><a href="{{ path('oc_core_homepage') }}">Accueil</a></li>
+        <li><a href="{{ path('oc_platform_add') }}">Ajouter une annonce</a></li>
+    </ul>
+
+    {{ parent() }}
+
+{% endblock %}
+
+{% block ocplatform_body %}
+
+{% endblock %}
